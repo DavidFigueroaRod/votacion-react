@@ -1,0 +1,13 @@
+.Titulo {
+    color: white;
+    background-color: red;
+    margin: 10px;
+    padding: 10px;
+    width: 60rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px thistle;
+}

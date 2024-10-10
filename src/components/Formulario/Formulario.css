@@ -1,0 +1,23 @@
+.card {
+    width: 50rem;
+    height: 30rem;
+    margin: 3rem;
+    padding: 2rem;
+    box-shadow: 10px 5px 5px thistle;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.imagen {
+    width: 100px;
+    height: 100px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
