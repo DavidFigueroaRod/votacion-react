@@ -1,0 +1,23 @@
+name: Hola-mundo
+on: 
+  push: #Puede tener varios disparadores e incluso pueden ser múltiples
+  #schedule:
+    #- cron: "15 * * * *" 
+    branches: [main] #Se puede especificar la rama
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: checkout repo
+      - uses: actions/checkout@v4.2.1 #Recupera el contenido del repositorio 
+
+    # Hacer un commit y un push a un repositorio
+      - name: Commit  and push changes
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: Commit de prueba
+          commit_user_name: David Figueroa
+          commit_user_email: david.figueroar0777@gmail.com
